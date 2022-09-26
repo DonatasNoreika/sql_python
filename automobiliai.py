@@ -35,9 +35,9 @@ while True:
             kaina_nuo = input("Kaina nuo:")
             kaina_iki = input("Kaina iki:")
             search_tuple = (
-                marke + '%' if marke else '%',
-                modelis + '%' if modelis else '%',
-                spalva + '%' if spalva else '%',
+                marke if marke else '%',
+                modelis if modelis else '%',
+                spalva if spalva else '%',
                 int(metai_nuo) if metai_nuo else 1900,
                 int(metai_iki) if metai_iki else 2025,
                 int(kaina_nuo) if kaina_nuo else 0,
